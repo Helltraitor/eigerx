@@ -1,0 +1,21 @@
+-- Set values into tables
+
+-- Set DEPARTMENTS
+INSERT INTO public."Department"(
+	id, name, location
+)
+	VALUES (1, 'Executive', 'Sydney'),
+	       (2, 'Production', 'Sydney'),
+		   (3, 'Resources', 'Cape Town'),
+		   (4, 'Technical', 'Texas'),
+		   (5, 'Management', 'Paris');
+
+-- Set EMPLOYEE
+INSERT INTO public."Employee"(
+	id, name, salary, dept_id
+)
+	VALUES (1, 'Candice', 4685, 1),
+		   (2, 'Julia', 2559, 2),
+		   (3, 'Bob', 4405, 4),
+		   (4, 'Scarlet', 2350, 1),
+		   (5, 'Ileana', 1151, 4);

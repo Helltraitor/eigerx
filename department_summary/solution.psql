@@ -1,0 +1,5 @@
+SELECT "Department".name, COUNT(NULLIF("Employee".dept_id, 0))
+FROM public."Department"
+LEFT JOIN public."Employee" ON "Employee".dept_id = "Department".id
+GROUP BY "Department".id
+ORDER BY "Department".id;
